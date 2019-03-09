@@ -16,4 +16,5 @@
 
 4. When the form has been submitted it could take a while until you get your API key. When you get it will be displayed [here.](https://apex.tracker.gg/site-api)
    on the page you will see your api key and you only want the numbers and the letters not the "TRN-Api-Key: " part.
-   only the part that i have crossed out here ![API KEY](/screenshots/apiketInfo.jpg)
+   only the part that i have crossed out here
+   ![API KEY](/screenshots/apiketInfo.jpg)
