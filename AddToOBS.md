@@ -15,5 +15,5 @@
    ![Browser Properties](/screenshots/browserProperties.jpg)
    
    
-3. If you have trouble finding the HTML file you can download it (HERE)[https://github.com/AleksanderEvensen/Apex-Legends-Stream-Overlay/releases/tag/Overlay_files]
+3. If you have trouble finding the HTML file you can download it [HERE](https://github.com/AleksanderEvensen/Apex-Legends-Stream-Overlay/releases/tag/Overlay_files)
    just extract the contents and add the OBSOverlay.html file in OBS instead
