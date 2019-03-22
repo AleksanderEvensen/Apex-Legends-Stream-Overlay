@@ -1,0 +1,22 @@
+{
+    "playername": "Unknown",
+    "level": 0,
+    "kills": 0,
+    "killspermatch": 0,
+    "legends": [
+        {
+            "name": "Unknown",
+            "icon": "https:// some link .com",
+            "bgImage": "https:// some link .com",
+            "stats": [
+                {
+                    "key": "kills",
+                    "value": 0,
+                    "rank": 0,
+                    "displayvalue": "0",
+                    "displayrank": "0"
+                }
+            ]
+        }
+    ]
+}

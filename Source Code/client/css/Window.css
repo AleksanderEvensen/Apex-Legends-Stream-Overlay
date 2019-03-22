@@ -1,0 +1,70 @@
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+
+#titlebar {
+    display: block;
+    position: fixed;
+    height: 32px;
+    width: 100%;
+  }
+  
+  
+
+  #titlebar {
+    padding: 4px;
+  }
+  #titlebar #drag-region {
+    width: 100%;
+    height: 100%;
+    -webkit-app-region: drag;
+  }
+
+  #titlebar {
+    color: #333333;
+    box-shadow: 0px -5px 25px rgba(0,0,0,.75);
+  }
+  #window-controls {
+    display: grid;
+    grid-template-columns: repeat(3, 46px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    font-family: "Segoe MDL2 Assets";
+    font-size: 10px;
+  }
+  #window-controls .window_button {
+    grid-row: 1 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  #window-controls #min-button {
+    grid-column: 2;
+  }
+  #window-controls #max-button, #window-controls #restore-button {
+    grid-column: 1;
+  }
+  #window-controls #close-button {
+    grid-column: 3;
+  }
+  #window-controls {
+    -webkit-app-region: no-drag;
+  }
+  #window-controls .window_button {
+    user-select: none;
+    cursor: default;
+  }
+  #window-controls .window_button:hover {
+    background: rgba(0,0,0,0.3);
+    color:#FFF;
+  }
+  #window-controls #close-button:hover {
+    background: #E81123;
+  }
+  #window-controls #restore-button {
+    display: none;
+  }

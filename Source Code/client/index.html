@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="description" content="A streaming overlay for apex legends">
+    <meta name="author" content="Aleksander Evensen | ArcadeSandwich">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/Window.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Apex Overlay</title>
+</head>
+
+<body>
+    <div id="bg"></div>
+    <div id="bg2"></div>
+    <div id="bg3"></div>
+    <header id="titlebar">
+        <div id="drag-region">
+            <div id="window-controls">
+                <div class="window_button" id="min-button">
+                    <span>&#xE921;</span>
+                </div>
+                <!--<div class="window_button" id="max-button">
+                    <span>&#xE922;</span>
+                </div>
+                <div class="window_button" id="restore-button">
+                    <span>&#xE923;</span>
+                </div>-->
+                <div class="window_button" id="close-button">
+                    <span>&#xE8BB;</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="main">
+        <div class="center-card">
+            <div id="content">
+
+                <div id="playerInfo">
+                    <input type="text" id="txt_playerName" class="inputText" placeholder="Player Name">
+                    <select style="margin-left:10px" id="sel_platform" class="inputSelect">
+                        <option value="5">PC</option>
+                        <option value="2">PS4</option>
+                        <option value="1">XBOX ONE</option>
+                    </select>
+                </div>
+                <div id="apiInfo">
+                    <div style="margin-top:3px">
+                        <a class="smallLink" onclick="openAPITutorial()" href="#">How to obtain a API key</a>
+                    </div>
+                    <div>
+                        <input type="text" id="txt_apiKey" class="inputText" placeholder="Tracker Network API Key">
+                    </div>
+                </div>
+                <div>
+                    <div style="margin-top:5px">
+                        <a class="smallLink" onclick="openOBSTutorial()" href="#">How to add the overlay in OBS</a>
+                    </div>
+                </div>
+                <div>
+                    <div style="margin-top:20px">
+                        <a id="PaypalLink" onclick="openPayPalLink()" href="#">Donate to the creator<i
+                                class="fab fa-paypal"></i></a>
+                    </div>
+                </div>
+                <div style="margin-top:10px" id="saveAndRun">
+                    <button style="position:absolute; bottom: 10px; right:10px" id="btn_saveSettings"
+                        class="inputButton">Save
+                        Settings</button>
+                    <button style="position:absolute; bottom:10px; left:10px" id="btn_startServer"
+                        class="inputButton">Start
+                        Server</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./js/window.js"></script>
+<script>
+    const { shell } = require('electron');
+    function openAPITutorial() {
+        shell.openExternal('https://github.com/AleksanderEvensen/Apex-Legends-Stream-Overlay/blob/master/ObtainAPIKey.md');
+    }
+    function openOBSTutorial() {
+        shell.openExternal('https://github.com/AleksanderEvensen/Apex-Legends-Stream-Overlay/blob/master/AddToOBS.md');
+    }
+    function openPayPalLink() {
+        shell.openExternal('https://www.paypal.me/AleksanderEvensen');
+    }
+
+
+</script>
+<script src="./main.js"></script>
+
+</html>
