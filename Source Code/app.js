@@ -24,18 +24,20 @@ app.on('ready', function () {
 
     // Enable keyboard shortcuts for Developer Tools on various platforms.
 
-
+    
     // Enable this for debugging.
     /*let platform = os.platform()
     if (platform === 'darwin') {
         globalShortcut.register('Command+Option+I', () => {
             mainWindow.webContents.openDevTools()
         })
+        
     } else if (platform === 'linux' || platform === 'win32') {
         globalShortcut.register('Control+Shift+I', () => {
             mainWindow.webContents.openDevTools()
         })
     }*/
+    // VGhpcyBzb2Z0d2FyZSB3YXMgbWFkZSBieSBBbGVrc2FuZGVyIEV2ZW5zZW46IGh0dHBzOi8vZ2l0aHViLmNvbS9BbGVrc2FuZGVyRXZlbnNlbg==
 
     mainWindow.once('ready-to-show', () => {
         mainWindow.setMenu(null)
