@@ -33,3 +33,4 @@ const remote = require('electron').remote;
 
     }
 })();
+// VGhpcyBzb2Z0d2FyZSB3YXMgbWFkZSBieSBBbGVrc2FuZGVyIEV2ZW5zZW46IGh0dHBzOi8vZ2l0aHViLmNvbS9BbGVrc2FuZGVyRXZlbnNlbg==
